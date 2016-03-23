@@ -19,3 +19,7 @@ keys(students)
 # increase cohort values by 5%
 students.each { |keys, values| students[keys] = values * 1.05}
 keys(students)
+
+# delete 2nd cohort and redisplay cohorts
+students.delete(:cohort2)
+keys(students)
