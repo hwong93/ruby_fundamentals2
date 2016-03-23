@@ -23,3 +23,9 @@ keys(students)
 # delete 2nd cohort and redisplay cohorts
 students.delete(:cohort2)
 keys(students)
+
+# Bonus add up all the cohort values
+sum = 0
+numStudents = students.values
+numStudents.each { |value| sum += value }
+puts "Sum of students in all the cohorts #{sum}"
