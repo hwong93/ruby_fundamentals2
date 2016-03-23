@@ -17,14 +17,20 @@ numItems = grocery_list.length
 puts "There are #{numItems} items on your list"
 
 # See if you have bananas on the list
-if grocery_list.include? "bananas"
-  puts "You need to pick up Bananas today"
-else
-  puts "You don\'t need to pick up Bananas today"
-end
+# if grocery_list.include? "bananas"
+#   puts "You need to pick up Bananas today"
+# else
+#   puts "You don\'t need to pick up Bananas today"
+# end
+
+puts grocery_list.include?("bananas") ? "You need to pick up bananas today" : "You don\'t need to pick up bananas today"
 
 # Display second item on the grocery list
 puts "Second item on the list: #{grocery_list[1]}"
 
 # Sort alphabetically and print list again
+listitems(grocery_list.sort)
+
+# Delete salmon from the list
+grocery_list.delete("salmon")
 listitems(grocery_list.sort)
