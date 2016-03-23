@@ -25,7 +25,11 @@ students.delete(:cohort2)
 keys(students)
 
 # Bonus add up all the cohort values
-sum = 0
-numStudents = students.values
-numStudents.each { |value| sum += value }
-puts "Sum of students in all the cohorts #{sum}"
+# sum = 0
+num_students = students.values
+# numStudents.each { |value| sum += value }
+# puts "Sum of students in all the cohorts #{sum}"
+
+
+s = num_students.inject { |sum, values| sum + values}
+puts s
