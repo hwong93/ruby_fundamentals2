@@ -15,3 +15,10 @@ listitems(grocery_list)
 #find the amount of items on your list
 numItems = grocery_list.length
 puts "There are #{numItems} items on your list"
+
+# See if you have bananas on the list
+if grocery_list.include? "bananas"
+  puts "You need to pick up Bananas today"
+else
+  puts "You don\'t need to pick up Bananas today"
+end
