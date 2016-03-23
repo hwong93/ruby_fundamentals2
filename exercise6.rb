@@ -25,3 +25,6 @@ end
 
 # Display second item on the grocery list
 puts "Second item on the list: #{grocery_list[1]}"
+
+# Sort alphabetically and print list again
+listitems(grocery_list.sort)
