@@ -15,3 +15,7 @@ keys(students)
 # adding cohort 4
 students[:cohort4] = 43
 keys(students)
+
+# increase cohort values by 5%
+students.each { |keys, values| students[keys] = values * 1.05}
+keys(students)
